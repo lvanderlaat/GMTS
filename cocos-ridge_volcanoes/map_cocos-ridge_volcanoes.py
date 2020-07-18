@@ -11,15 +11,16 @@ ymax = 16
 # zmax = 4028.23535156
 output = 'coco_volcanoes'
 
+margin2map_width = 8/1.5
 MAP_WIDTH = 8
-MARGIN = 3
+MARGIN = 1.6
 SCALE_WIDTH = 0.7
 
 WIDTH = MAP_WIDTH + MARGIN
 height = WIDTH/(xmax-xmin)*(ymax-ymin)
 map_height = MAP_WIDTH/(xmax-xmin)*(ymax-ymin)
 
-WIDTH += SCALE_WIDTH
+WIDTH += 2*SCALE_WIDTH
 
 x_topo_scale = MAP_WIDTH + 0.1
 y_topo_scale = map_height/2
